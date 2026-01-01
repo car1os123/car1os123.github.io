@@ -1,0 +1,104 @@
+/* styles.css - Estilos modulares, bonitos y 100% compatibles con Google AdSense */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    background-color: #f5f7fa;
+    color: #333;
+    padding: 20px 10px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.6rem;
+    color: #2c3e50;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.15rem;
+    margin-bottom: 28px;
+    text-align: justify;
+    color: #444;
+}
+
+/* === ZONA CRÍTICA: ANUNCIOS === */
+/* Estos estilos son seguros y recomendados para AdSense */
+
+#anuncio1,
+#anuncio2,
+#anuncio3,
+#anuncio4,
+#anuncio5 {
+    margin: 50px auto;           /* Espacio arriba y abajo, centrado horizontal */
+    text-align: center;          /* Centra el contenido interno */
+    width: 100%;                 /* Permite que el anuncio use todo el ancho disponible */
+    min-height: 100px;           /* Evita colapsos si el anuncio tarda en cargar */
+    padding: 20px 0;             /* Espacio interno suave, sin bordes que corten */
+    background-color: #f8f9fa;   /* Fondo sutil para destacar el bloque */
+    border-radius: 10px;
+    overflow: visible !important; /* ¡IMPORTANTE! Evita cortar partes del anuncio */
+}
+
+/* Asegura que el <ins> de AdSense tenga el espacio que necesita */
+#anuncio1 ins,
+#anuncio2 ins,
+#anuncio3 ins,
+#anuncio4 ins,
+#anuncio5 ins {
+    display: block !important;
+    margin: 0 auto !important;   /* Centra el anuncio dentro del contenedor */
+    max-width: 100% !important;
+}
+
+/* Responsive - ajustes seguros para móviles */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+    
+    p {
+        font-size: 1.1rem;
+    }
+    
+    #anuncio1,
+    #anuncio2,
+    #anuncio3,
+    #anuncio4,
+    #anuncio5 {
+        margin: 40px auto;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+    
+    p {
+        text-align: left;
+        font-size: 1.05rem;
+    }
+}
